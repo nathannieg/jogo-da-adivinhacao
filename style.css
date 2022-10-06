@@ -1,0 +1,170 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-color:radial-gradient(circle, rgba(49,193,176,1) 12%, rgba(30,130,125,1) 94%);
+  --card-color: #f6f6f6;
+  --ff-color-btn: #f6f6f6;
+  --heading-color: #1e827d;
+  --p-color: rgb(4,41,62);
+  --a-color: rgb(1, 14, 21);
+  --btn-color: #31c1b0;
+  --input-color: rgb(216, 216, 216);
+  --ff-headings: 'Montserrat', sans-serif;
+  --ff-main:'DM Sans', sans-serif;
+}
+
+body,
+input,
+button {
+  font-size: 1.6rem;
+  font-family: var(--ff-main);
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--p-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+h1, h2 {
+  font-family: var(--ff-headings);
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--a-color);
+  font-weight: 700;
+  transform: 0.5s;
+}
+
+a:hover {
+  color: rgb(53, 58, 61);
+}
+
+/* TRY SCREEN & RETRY SCREEN*/
+
+main {
+  background-color: var(--card-color);
+  width: max(50vw, 30rem); /* at least 30rem, but 50vw if screen is bigger*/
+  padding: 3rem;
+  height: 65vh;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 4px rgb(0 0 0 / 10%);
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* position: relative; */
+}
+
+p, form {
+  margin-top: 3rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+input,
+button {
+  width: 9rem;
+  height: 5rem;
+  border: none;
+}
+
+button {
+  background-color: var(--btn-color);
+  color: var(--ff-color-btn);
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+button:hover {
+  background-color: #1e827d;
+}
+
+form button {
+  border-radius: 0 4px 4px 0;
+}
+
+input {
+  background-color: var(--input-color);
+  color: var(--p-color);
+  padding: 0 2rem;
+  border-radius: 4px 0 0 4px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid var(--btn-color);
+}
+
+form + p {
+  margin-top: 4rem;
+  /* position: absolute; */
+}
+
+.hide-message {
+  display: none;
+}
+
+.hide-try-screen {
+  display: none;
+}
+
+/* RETRY SCREEN */
+
+.hide-retry-screen {
+  display: none;
+}
+
+/* .hide-retry-screen {
+  display: block;
+} */
+
+.retry-screen button {
+  width: 16rem;
+  border-radius: 4px;
+  margin-top: 2rem;
+}
+
+/* FOOTER */
+
+footer {
+  font-size: 1.2rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
