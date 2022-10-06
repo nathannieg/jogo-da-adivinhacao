@@ -30,7 +30,7 @@ O objetivo deste desafio é criar um jogo de adivinhação que vai:
 
 ### Links
 
-[Live site]()
+[Live site](https://nathannieg.github.io/jogo-da-adivinhacao/)
 
 ### Tecnologias
 
