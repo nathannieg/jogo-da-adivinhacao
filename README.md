@@ -48,7 +48,7 @@ O objetivo deste desafio é criar um jogo de adivinhação que vai:
 
 ### Melhorias
 
-- Corrigir os scrolls horizontal e vertical.
+- Corrigir erro que dá quando o usuário divita zero e aparece e mensagem dizendo que o valor é inválido.
 
 ## Desenvolvedora
 
